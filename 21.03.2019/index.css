@@ -3,44 +3,69 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0 0 50px 0;
   margin: 0 auto;
   width: 80%;
+  background-color: #e2e1e0;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 100px;
+  margin: 5px 0 80px 0;
+  background-color: #ffffff;
+  padding-left: 25px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.16), 0 5px 7px rgba(0, 0, 0, 0.23);
 }
 
-h1 {
+header h1 {
   margin-bottom: 0;
+  padding-top: 5px;
 }
 
-h2 {
+header h2 {
   margin-top: 5px;
+  padding-bottom: 5px;
 }
 
-.border {
-  border: 3px dashed black;
-  border-radius: 3px;
+fieldset {
+  background-color: #ffffff;
+  border: 0;
 }
 
-.title {
+fieldset:hover {
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.16), 0 5px 7px rgba(0, 0, 0, 0.23);
+}
+
+legend {
   font-size: 20px;
   margin-left: 45px;
   padding: 0 10px;
+  background-color: #e2e1e0;
+}
+
+legend:hover {
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .first-paragraph {
   margin: 10px;
 }
 
+span {
+  color: #e2e1e0;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.fieldset-margin {
+  margin: 50px 0;
+}
+
 .work-experience {
   margin: 10px;
-}
-.margin {
-  margin: 50px 0;
+  padding-left: 10px;
+  border-left: 5px solid #e2e1e0;
 }
 
 .work-experience > div {
@@ -56,34 +81,60 @@ h2 {
   margin-bottom: 20px;
 }
 
-.float-left {
+.p-float {
   float: left;
 }
 
 .js-developer {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.image-container {
+.figure-image {
+  width: 500px;
+  border: 2px solid #e2e1e0;
   float: left;
-  width: 20%;
-  margin: 10px 0 10px 0;
+  margin-right: 50%;
+  border-radius: 5px;
+  border-collapse: collapse;
+  position: relative;
+  margin-top: 5px;
 }
 
 img {
   width: 30px;
   height: 30px;
   float: left;
-  margin-left: 5px;
 }
 
 .skills {
-  border: 1px solid black;
+  padding: 6px;
   float: left;
-  width: auto;
-  height: 30px;
+  background-color: #e2e1e0;
+  transition-property: 100px;
+  font-weight: bolder;
+  text-align: start;
+}
+
+.figure-image:hover .skills {
+  width: 465px;
+  cursor: w-resize;
+}
+
+.tool {
+  visibility: hidden;
+  position: absolute;
+  top: -12px;
+  left: 510px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #e2e1e0;
   padding: 5px;
-  text-align: center;
+  border-radius: 5px;
+}
+
+.figure-image:hover .tool {
+  visibility: visible;
 }
 
 .clear {
