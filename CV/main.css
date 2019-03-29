@@ -1,0 +1,217 @@
+/* body rules start */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 20px 0 50px 0;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #e2e1e0;
+  color: #323330;
+}
+/* body rules end */
+
+/* main rules start */
+
+header,
+.skills,
+.workexperience,
+.article-lorem {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+header:hover,
+.skills:hover,
+.workexperience:hover,
+.article-lorem:hover {
+  box-shadow: 0 5px 10px #999999, 0 5px 10px #b2b2b2;
+  background-color: #e2e1e0;
+}
+/* main rules end */
+
+/* header rules start*/
+header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 5px;
+}
+
+header h3 {
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+h3 span {
+  background-color: #f0db4f;
+  font-size: 30px;
+  margin-right: 5px;
+  padding: 8px 0 0 7px;
+  cursor: crosshair;
+}
+/* header rules end*/
+
+/* About me wraper start */
+.article-lorem {
+  position: relative;
+  padding: 20px;
+}
+.article-lorem::first-letter {
+  margin-left: 20px;
+}
+
+.article-lorem::before {
+  content: "About Me";
+  font-weight: bolder;
+  position: absolute;
+  background-color: #e2e1e0;
+  padding: 2px;
+  border-radius: 5px;
+  top: -13px;
+  cursor: pointer;
+}
+
+.article-lorem:hover::before {
+  color: #ff0000;
+  transition-delay: 0.5s;
+}
+/* About me wraper end */
+
+/* Wordk experience wraper start */
+.workexperience {
+  margin: 50px 0;
+  padding: 20px;
+  position: relative;
+}
+
+.workexperience::before {
+  content: "Work Experience";
+  font-weight: bolder;
+  position: absolute;
+  background-color: #e2e1e0;
+  top: -10px;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workexperience:hover::before {
+  color: #ff0000;
+  transition-delay: 0.5s;
+}
+
+.section-article {
+  padding: 20px 0;
+  display: flex;
+}
+
+.workplace {
+  flex: 1;
+  position: relative;
+}
+.workplace:before {
+  position: absolute;
+  content: "";
+  height: 57px;
+  width: 5px;
+  background-color: #999999;
+  left: -10px;
+}
+
+.work-text {
+  flex: 1;
+  position: relative;
+}
+.work-text:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 5px solid #999999;
+  border-bottom: 5px solid #999999;
+  left: -40px;
+  transform: rotate(-45deg);
+  top: 25px;
+}
+
+.js-developer {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* Wordk experience wraper end */
+
+/* Skills wraper start*/
+.skills {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills::before {
+  content: "Skills";
+  font-weight: bolder;
+  position: absolute;
+  background-color: #e2e1e0;
+  top: -10px;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.skills:hover::before {
+  color: #ff0000;
+  transition-delay: 0.5s;
+}
+
+.figure-image {
+  display: flex;
+  width: 200px;
+  margin: 2% 0;
+}
+.imagehover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  flex: 1;
+}
+
+.skill {
+  flex: 1;
+  font-weight: bolder;
+  border: 3px solid #e2e1e0;
+  padding: 2px;
+  cursor: not-allowed;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #ff0000;
+  padding: 5px;
+  top: -10px;
+  color: #ffffff;
+  transform: rotate(35deg);
+}
+
+.imagehover:hover .tooltip {
+  visibility: visible;
+  position: absolute;
+  cursor: not-allowed;
+}
+/* Skills wraper end*/
+
+/* The end */
