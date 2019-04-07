@@ -1,0 +1,48 @@
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url(media/web.jpg);
+  }
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "head head "
+      "article skill"
+      "work skill"
+      "foot foot";
+  }
+  .figure-image {
+    padding-top: 50px;
+  }
+  header:before {
+    left: 0;
+    transition: 0s;
+  }
+  header:after {
+    right: 0;
+  }
+}
+@media screen and (max-width: 530px) {
+  body {
+    background-image: url(media/android.jpg);
+  }
+  .container {
+    display: grid;
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "head"
+      "article"
+      "work"
+      "skill"
+      "foot";
+  }
+  header:before,
+  header:after {
+    display: none;
+  }
+  .figure-image {
+    padding-top: 20px;
+  }
+}
